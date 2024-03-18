@@ -1,13 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-:root{
+:root {
+  --font: "Outfit", sans-serif;
 
-    --font: "Outfit", sans-serif;
-
-    --Very-dark-blue: hsl(217, 54%, 11%);
-    --Very-dark-blue: hsl(216, 50%, 16%);
-    --Very-dark-blue: hsl(215, 32%, 27%);
-    --White: hsl(0, 0%, 100%);
-    --Soft-blue: hsl(215, 51%, 70%);
-    --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-bg: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --Very-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-dark-blue-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card__container {
+  background-color: var(--Very-dark-blue-card-bg);
+  width: 350px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.card__container > img {
+  width: 320px;
+  border-radius: 8px;
+}
+
+.card__container h2 {
+  color: var(--White);
+  padding: 1rem 0;
+}
+
+.card__container > p {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: var(--Soft-blue);
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.balance img {
+  margin-right: 6px;
+}
+
+.coin {
+  color: var(--Cyan);
+  font-weight: 400;
+}
+
+.time {
+  color: var(--Soft-blue);
+  font-style: var(--font);
+}
+
+.card__container hr {
+  border: 1px solid var(--Very-dark-blue);
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.profile img {
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.profile span{
+    color: var(--Soft-blue);
+    margin-right: .5rem;
+}
+.profile p{
+    color: var(--White);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+/** Without any media query it is responsive **/
