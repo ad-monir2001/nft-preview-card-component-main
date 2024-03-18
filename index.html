@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <link
       rel="icon"
@@ -17,7 +17,19 @@
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
+    <div class="card__container">
+      <img src="./images/image-equilibrium.jpg" alt="image of Equilibrium" />
+      <h2>Equilibrium #3429</h2>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="balance">
+        <span><img src="./images/icon-ethereum.svg" alt="" />0.041 ETH</span>
+        <span><img src="./images/icon-clock.svg" alt="" />3 days left</span>
+      </div>
+      <hr />
+      <div class="profile">
+        <img src="./images/image-avatar.png" alt="" />
+        <p><span>Creation of </span> Jules Wyvern</p>
+      </div>
+    </div>
   </body>
 </html>
