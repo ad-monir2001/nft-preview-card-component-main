@@ -29,15 +29,45 @@ body {
   width: 350px;
   padding: 1rem;
   border-radius: 8px;
+  position: relative;
 }
-.card__container > img {
+.hero__img{
   width: 320px;
   border-radius: 8px;
+  position: relative;
 }
+.eye{
+    position: absolute;
+    text-align: center;
+    line-height: 320px;
+    left: 1px;
+    top: -3px;
+    border-radius: 8px;
+    background-color: rgba(0, 255, 255,.4);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.images:hover .eye{
+    display: block;
+    cursor: pointer;
+}
+
+.images{
+    position: relative;
+}
+
 
 .card__container h2 {
   color: var(--White);
   padding: 1rem 0;
+  display: inline-block;
+}
+
+.card__container h2:hover{
+    color: var(--Cyan);
+    cursor: pointer;
 }
 
 .card__container > p {
@@ -89,6 +119,12 @@ body {
     color: var(--White);
     font-weight: 400;
     font-size: 1.3rem;
+    display: inline;
+}
+
+.profile p:hover{
+    color: var(--Cyan);
+    cursor: pointer;
 }
 
 /** Without any media query it is responsive **/
